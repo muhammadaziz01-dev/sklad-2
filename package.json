@@ -12,12 +12,14 @@
   "dependencies": {
     "pinia": "^3.0.4",
     "vue": "^3.5.29",
-    "vue-router": "^5.0.3"
+    "vue-router": "^5.0.3",
+    "vue3-toastify": "^0.2.9"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.4",
     "@vitejs/plugin-vue-jsx": "^5.1.4",
     "oxfmt": "^0.35.0",
+    "sass-embedded": "^1.97.3",
     "vite": "^7.3.1",
     "vite-plugin-vue-devtools": "^8.0.6"
   },
