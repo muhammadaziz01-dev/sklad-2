@@ -34,23 +34,21 @@ import Open from "../../assets/open.svg";
 import Clos from "../../assets/clos.svg";
 import LoginImg from "../../assets/login-image.png";
 
+const router = useRouter();
 
-    const router = useRouter();
+const isOpen = ref(true);
 
-    const isOpen = ref(true);
+const user = reactive({
+  login: "",
+  password: "",
+});
 
-    const user = reactive({
-      login: "",
-      password: "",
-    });
+const toggleOpen = () => {
+  isOpen.value = !isOpen.value;
+};
 
-    const toggleOpen = () => {
-      isOpen.value = !isOpen.value;
-    };
-
-    const handleLogin = () => {
+const handleLogin = () => {
   if (user.login.trim() && user.password.trim()) {
-
     if (user.login === "Muhammadaziz" && user.password === "571633") {
       toast.success("Кириш муваффақиятли!");
       console.log("User login: " + user.login + " User password: " + user.password);
@@ -61,16 +59,12 @@ import LoginImg from "../../assets/login-image.png";
       setTimeout(() => {
         router.push("/dashboard");
       }, 1500);
-
     } else {
       toast.error("Логин ёки пароль нотўғри!");
     }
-
   } else {
     toast.error("Илтимос, иккала майдонни ҳам тўлдиринг!");
   }
 };
-
-   
 </script>
 <style scoped lang="scss" src="./style.scss"></style>
