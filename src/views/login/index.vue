@@ -12,7 +12,7 @@
         <label for="login" class="login-page--card--form--label">
           <input
             :type="isOpen ? 'password' : 'text'"
-            placeholder="Парол"
+            placeholder="Пароль"
             v-model="user.password"
             required
           />
@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { ref, reactive } from "vue";
 import { useRouter } from "vue-router";
 import { toast } from "vue3-toastify";
@@ -36,8 +36,7 @@ import Open from "../../assets/open.svg";
 import Clos from "../../assets/clos.svg";
 import LoginImg from "../../assets/login-image.png";
 
-export default {
-  setup() {
+
     const router = useRouter();
 
     const isOpen = ref(true);
@@ -52,32 +51,28 @@ export default {
     };
 
     const handleLogin = () => {
-      if (user.login.trim() && user.password.trim()) {
-        toast.success("Кириш муваффақиятли!");
-        console.log("User login: " + user.login + " User password: " + user.password);
+  if (user.login.trim() && user.password.trim()) {
 
-        user.login = "";
-        user.password = "";
+    if (user.login === "Muhammadaziz" && user.password === "571633") {
+      toast.success("Кириш муваффақиятли!");
+      console.log("User login: " + user.login + " User password: " + user.password);
 
-        setTimeout(() => {
-          router.push("/dashboard");
-        }, 1500);
-      } else {
-        toast.error("Илтимос, иккала майдонни ҳам тўлдиринг!");
-      }
-    };
+      user.login = "";
+      user.password = "";
 
-    return {
-      isOpen,
-      user,
-      toggleOpen,
-      handleLogin,
-      User,
-      Open,
-      Clos,
-      LoginImg,
-    };
-  },
+      setTimeout(() => {
+        router.push("/dashboard");
+      }, 1500);
+
+    } else {
+      toast.error("Login ёки пароль нотўғри!");
+    }
+
+  } else {
+    toast.error("Илтимос, иккала майдонни ҳам тўлдиринг!");
+  }
 };
+
+   
 </script>
 <style scoped lang="scss" src="./style.scss"></style>
