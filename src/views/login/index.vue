@@ -20,8 +20,6 @@
         </label>
         <button type="submit">Кириш</button>
       </form>
-      <!-- <p class="forgot-password">Parolni unutdingizmi?</p>
-    <p v-if="error" class="error">{{ error }}</p> -->
     </div>
   </div>
 </template>
@@ -65,7 +63,7 @@ import LoginImg from "../../assets/login-image.png";
       }, 1500);
 
     } else {
-      toast.error("Login ёки пароль нотўғри!");
+      toast.error("Логин ёки пароль нотўғри!");
     }
 
   } else {
