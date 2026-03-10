@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import LoginPage from '../views/login/index.vue';
 import DashboardPage from '../views/deshbord/index.vue';
-import DashboardHome from '../views/deshbordHome/index.vue';
-import DashboardSettings from '../views/deshbordStatik/index.vue';
+import DashboardValfef from '../views/deshbordValfex/index.vue';
+import DashboardRTP from '../views/deshbordRTP/index.vue';
 import ErrorPage from '../views/error/index.vue';
 
 const routes = [
@@ -18,13 +18,13 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'DashboardHome',
-        component: DashboardHome
+        name: 'DashboardRTP',
+        component: DashboardRTP
       },
       {
-        path: 'settings',
-        name: 'DashboardSettings',
-        component: DashboardSettings
+        path: 'valfex',
+        name: 'DashboardValfef',
+        component: DashboardValfef
       }
     ]
   },

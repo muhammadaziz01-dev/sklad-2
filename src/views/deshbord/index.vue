@@ -17,7 +17,7 @@
       <router-link to="/dashboard">
         <img :src="RTP" alt="RTP logo">
       </router-link> 
-      <router-link to="/dashboard/settings">
+      <router-link to="/dashboard/valfex">
       <img :src="VALFEX" alt="Valfex logo">
       </router-link>
     </nav>
