@@ -1,13 +1,15 @@
-<!-- DashboardSettings.vue -->
+<!-- Dashboard Valfex.vue -->
 <template>
-    <div>
-      <h3>Dashboard Settings</h3>
-      <p>Change your settings here.</p>
+    <div class="wrapper">
+      <h3 class="wrapper--title"> <span>Valfex</span> фирмасининг маҳсулотлари</h3>
+      <div class="wrapper--parent-card">
+         
+      </div>
     </div>
   </template>
   
-  <script>
-  export default {
-    name: 'DashboardSettings'
-  };
+  <script setup>
+  
   </script>
+
+  <style scoped lang="scss" src="./style.scss"></style>

@@ -1,13 +1,17 @@
-<!-- DashboardHome.vue -->
+<!-- Dashboard RTP&.vue -->
 <template>
-    <div>
-      <h3>Dashboard Home</h3>
-      <p>Welcome to your dashboard!</p>
+  <div class="wrapper">
+    <h3 class="wrapper--title"> <span>Rosturplast</span> фирмасининг маҳсулотлари</h3>
+    <div class="wrapper--parent-card">
+      <div class="wrapper--parent-card--card">
+        <!-- <img :src="TrubaPPR" alt="Truba PPR"> -->
+      </div> 
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'DashboardHome'
-  };
-  </script>
+  </div>
+</template>
+
+<script setup>
+import TrubaPPR from "../../assets/productImgs/trubaPPR.webp";
+</script>
+
+<style scoped lang="scss" src="./style.scss"></style>
