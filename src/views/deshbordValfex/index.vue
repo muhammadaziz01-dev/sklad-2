@@ -1,7 +1,7 @@
 <!-- Dashboard Valfex.vue -->
 <template>
   <div class="wrapper">
-    <h3 class="wrapper--title"><span>Valfex</span> фирмасининг маҳсулотлари</h3>
+    <h3 class="wrapper--title"><span>Valfex</span> продукты</h3>
     <div class="wrapper--parent-card">
       <div class="wrapper--parent-card--card">
         <img :src="TrubaValfex" alt="Truba PPR" class="wrapper--parent-card--card--img" />
