@@ -7,8 +7,8 @@
       </div>
       <div class="dashboard--info-card--statis">
         <div class="dashboard--info-card--statis--title">
-          <h4><count-up :end-val="9545345"></count-up> <span>сом</span> </h4>
-          <p><span><count-up :end-val="34"></count-up></span> различных продукта </p>
+          <h4><count-up :end-val="totalResidualValue + totalResidualValueValfex"></count-up> <span>сом</span></h4>
+          <p><span><count-up :end-val="productsCount +productsCountValfex"></count-up></span> различных продукта </p>
         </div>
         <img :src="Diogram" alt="statistika icon">
       </div>
@@ -31,6 +31,9 @@ import VALFEX from "../../assets/valfex-logo.png";
 import Sclad from "../../assets/sclad.png";
 import Diogram from "../../assets/diogram.svg"
 import CountUp from 'vue-countup-v3'
+import {productsCount , totalResidualValue} from "../../constants/rtp/index.js"
+import {productsCountValfex , totalResidualValueValfex} from "../../constants/valfex/index.js"
+
 
 
 </script>

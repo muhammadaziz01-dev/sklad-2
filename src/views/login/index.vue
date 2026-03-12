@@ -2,7 +2,7 @@
   <div class="login-page">
     <div class="login-page--card">
       <!-- Login form -->
-      <h1 class="login-page--card--title">Тизимга кириш</h1>
+      <h1 class="login-page--card--title">Войдите в систему</h1>
       <img :src="LoginImg" alt="Login Image" class="login-page--card--img" />
       <form @submit.prevent="handleLogin" class="login-page--card--form">
         <label for="login" class="login-page--card--form--label">
@@ -18,7 +18,7 @@
           />
           <img @click="toggleOpen" :src="isOpen ? Open : Clos" alt=" icon" />
         </label>
-        <button type="submit">Кириш</button>
+        <button type="submit">входить</button>
       </form>
     </div>
   </div>

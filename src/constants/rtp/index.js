@@ -1,6 +1,6 @@
+import trubaPPRPN20PRT from "@/assets/productImgs/trubaPPRPN20.png";
 import trubaRtp from "@/assets/productImgs/trubaPPR.webp";
 import toplipolRTP from "@/assets/productImgs/toplipolRTP.webp";
-import muftaNrRTP from "@/assets/productImgs/muftaNrRTP.webp";
 import skobaRTP from "@/assets/productImgs/skobaRTP.webp";
 import ugolRTP90 from "@/assets/productImgs/ugolRTP90.webp";
 import trubaVkRTP from "@/assets/productImgs/trubaVkRTP.webp";
@@ -233,7 +233,18 @@ const dataRTP = [
 },
 ];
 
+// RTP praduct list export
 export const allDataRTP = dataRTP.map((item) => ({
   ...item,
   residualValue: item.price * item.allResidual,
 }));
+
+
+// products count
+export const productsCount = allDataRTP.length;
+
+// all products  residual valyue
+export const totalResidualValue = allDataRTP.reduce(
+  (sum, item) => sum + item.residualValue,
+  0
+);
