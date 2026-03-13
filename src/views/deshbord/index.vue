@@ -14,10 +14,10 @@
       </div>
     </div>
     <nav class="dashboard--navbar" >
-      <router-link to="/dashboard">
+      <router-link to="/sklad">
         <img :src="RTP" alt="RTP logo">
       </router-link> 
-      <router-link to="/dashboard/valfex">
+      <router-link to="/sklad/valfex">
       <img :src="VALFEX" alt="Valfex logo">
       </router-link>
     </nav>

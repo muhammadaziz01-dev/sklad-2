@@ -41,7 +41,6 @@
 </template>
 
 <script setup>
-import TrubaPPR from "../../assets/productImgs/trubaPPR.webp";
 import{ allDataRTP} from "../../constants/rtp/index.js"
 </script>
 

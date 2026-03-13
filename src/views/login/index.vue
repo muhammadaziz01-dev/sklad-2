@@ -57,7 +57,7 @@ const handleLogin = () => {
       user.password = "";
 
       setTimeout(() => {
-        router.push("/dashboard");
+        router.push("/menu");
       }, 1500);
     } else {
       toast.error("Логин ёки пароль нотўғри!");
