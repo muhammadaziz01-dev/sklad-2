@@ -2,6 +2,9 @@
 <template>
   <div class="wrapper">
     <h3 class="wrapper--title"><span>Rosturplast</span> продукты</h3>
+    <InfoCard 
+    :count="productsCount"
+    :total="totalResidualValue" />
     <div class="wrapper--parent-card">
       <div class="wrapper--parent-card--card" v-for="item in allDataRTP" :key="item.id">
         <img :src="item.img" alt="Truba PPR" class="wrapper--parent-card--card--img" />
@@ -41,7 +44,8 @@
 </template>
 
 <script setup>
-import{ allDataRTP} from "../../constants/rtp/index.js"
+import{ allDataRTP , productsCount , totalResidualValue} from "../../constants/rtp/index.js"
+import InfoCard from "../../components/card/infoCard/index.vue"
 </script>
 
 <style scoped lang="scss" src="./style.scss"></style>

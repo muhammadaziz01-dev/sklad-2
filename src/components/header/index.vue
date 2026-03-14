@@ -2,8 +2,8 @@
   <header class="header">
     <nav class="header--nav">
      <button @click="pushRouter"><img :src="arrowLeft" alt="icon arrow left"></button>
-     <h2>Меню</h2>
-     <img :src="iconHome" alt="icon home" class="header--nav--img-home">
+     <h2>{{ allprops?.props?.title }}</h2>
+     <img :src="iconHome" alt="icon home" class="header--nav--img-home" @click="logaut">
     </nav>
   </header>
 </template>
@@ -14,9 +14,19 @@ import iconHome from "../../assets/iconHome.svg"
 import arrowLeft from "../../assets/arrow-left.svg"
 const router = useRouter()
 
+const allprops = defineProps({
+    props: Object
+})
+
 const pushRouter = () =>{
-    router.push('/') 
+    router.push(allprops?.props?.ruot) 
 }
+
+const logaut =()=>{
+    router.push("/")
+}
+
+
 </script>
 
 <style lang="scss" scoped>

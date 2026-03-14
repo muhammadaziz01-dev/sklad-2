@@ -50,7 +50,7 @@ const toggleOpen = () => {
 const handleLogin = () => {
   if (user.login.trim() && user.password.trim()) {
     if (user.login === "Muhammadaziz" && user.password === "571633") {
-      toast.success("Кириш муваффақиятли!");
+      toast.success("Вход успешен!");
       console.log("User login: " + user.login + " User password: " + user.password);
 
       user.login = "";
@@ -60,10 +60,10 @@ const handleLogin = () => {
         router.push("/menu");
       }, 1500);
     } else {
-      toast.error("Логин ёки пароль нотўғри!");
+      toast.error("Неверный логин или пароль!");
     }
   } else {
-    toast.error("Илтимос, иккала майдонни ҳам тўлдиринг!");
+    toast.error("Пожалуйста, заполните оба поля!");
   }
 };
 </script>

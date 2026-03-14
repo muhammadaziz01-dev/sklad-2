@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <Navbar />
+    <Navbar  :props="propsDate"/>
 
     <div class="wrapper--menu">
       <div class="wrapper--menu--card" @click="pushRouter">
@@ -30,12 +30,18 @@ import Sklad from "../../assets/sclad.png"
 import AgentsImg from "../../assets/users.svg"
 import Settings from "../../assets/gear.svg"
 import { useRouter } from "vue-router"
+const propsDate = {
+  title :"Меню",
+  ruot: "/",
+  logaut:"/"
+}
 
 const router = useRouter()
 
 const pushRouter = () => {
   router.push("/sklad")
 }
+
 </script>
 
 <style lang="scss" scoped src="./style.scss"></style>

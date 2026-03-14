@@ -2,6 +2,9 @@
 <template>
   <div class="wrapper">
     <h3 class="wrapper--title"><span>Valfex</span> продукты</h3>
+    <InfoCard 
+    :count="productsCountValfex"
+    :total="totalResidualValueValfex" />
     <div class="wrapper--parent-card">
       <div class="wrapper--parent-card--card" v-for="item in allDataValfex" :key="item.id">
         <img :src="item.img" alt="Truba PPR" class="wrapper--parent-card--card--img" />
@@ -41,7 +44,9 @@
 </template>
 
 <script setup>
-import{ allDataValfex} from "../../constants/valfex/index.js"
+import{ allDataValfex , productsCountValfex , totalResidualValueValfex} from "../../constants/valfex/index.js"
+import InfoCard from "../../components/card/infoCard/index.vue"
+
 </script>
 
 <style scoped lang="scss" src="./style.scss"></style>
