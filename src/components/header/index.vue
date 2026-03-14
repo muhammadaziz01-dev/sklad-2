@@ -3,15 +3,16 @@
     <nav class="header--nav">
      <button @click="pushRouter"><img :src="arrowLeft" alt="icon arrow left"></button>
      <h2>{{ allprops?.props?.title }}</h2>
-     <img :src="iconHome" alt="icon home" class="header--nav--img-home" @click="logaut">
+     <img :src="logautIcon" alt="icon home" class="header--nav--img-home" @click="logaut">
     </nav>
   </header>
 </template>
 
 <script setup>
 import {useRouter} from "vue-router"
-import iconHome from "../../assets/iconHome.svg"
 import arrowLeft from "../../assets/arrow-left.svg"
+import logautIcon from "../../assets/box-arrow-right.svg"
+
 const router = useRouter()
 
 const allprops = defineProps({

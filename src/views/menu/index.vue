@@ -3,12 +3,12 @@
     <Navbar  :props="propsDate"/>
 
     <div class="wrapper--menu">
-      <div class="wrapper--menu--card" @click="pushRouter">
+      <div class="wrapper--menu--card" @click="pushRouter(`/sklad`)">
         <img :src="Sklad" alt="sclad icon" />
         <p>Склад</p>
       </div>
 
-      <div class="wrapper--menu--card">
+      <div class="wrapper--menu--card" @click="pushRouter(`/agents`)">
         <img :src="AgentsImg" alt="agents icon" />
         <p>Агенты</p>
       </div>
@@ -33,13 +33,12 @@ import { useRouter } from "vue-router"
 const propsDate = {
   title :"Меню",
   ruot: "/",
-  logaut:"/"
 }
 
 const router = useRouter()
 
-const pushRouter = () => {
-  router.push("/sklad")
+const pushRouter = (link) => {
+  router.push(link)
 }
 
 </script>

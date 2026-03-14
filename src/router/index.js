@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import LoginPage from "../views/login/index.vue";
 import Sklad from "../views/deshbord/index.vue";
+import Agents from "../views/agents/index.vue";
 import SkladValfef from "../views/deshbordValfex/index.vue";
 import SkladdRTP from "../views/deshbordRTP/index.vue";
 import MenuPage from "@/views/menu/index.vue";
@@ -33,6 +34,11 @@ const routes = [
         component: SkladValfef,
       },
     ],
+  },
+  {
+    path: "/agents",
+    name: "Agents",
+    component: Agents,
   },
   {
     path: "/:pathMatch(.*)*",

@@ -22,7 +22,6 @@ import Navbar from "../../components/header/index.vue"
 const propsDate = {
   title :"Склад",
   ruot: "/menu",
-  logaut:"/"
 }
 
 
