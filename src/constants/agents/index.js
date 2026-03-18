@@ -175,3 +175,51 @@ export const dataAgents = [
 
 
 ]
+
+
+export const usersData = [
+    {
+        id:1,
+        name:"Muhammadaziz",
+        rol: "admin",
+        password:"57163363",
+    },
+    {
+        id:2,
+        name:"Нодирбек",
+        rol: "agent",
+        password: "010675",
+    },
+    {
+        id:3,
+        name:"Али",
+        password : "7588831",
+        rol: "agent"
+    },
+    {
+        id:5,
+        name:"Умиджон",
+        password : "110046",
+        rol: "agent"
+    },
+    {
+        id:6,
+        name:"Зухриддин",
+        password : "161023",
+        rol: "agent"
+    },
+    {
+        id:7,
+        name:"Шерзодбек",
+        password : "745858",
+        rol: "manager"
+    },
+    {
+        id:12,
+        name:"Холмухаммад",
+        password : "434510",
+        rol: "manager"
+    },
+
+
+]

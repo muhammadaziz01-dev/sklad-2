@@ -3,7 +3,7 @@
     <nav class="header--nav">
      <button @click="pushRouter"><img :src="arrowLeft" alt="icon arrow left"></button>
      <h2>{{ allprops?.props?.title }}</h2>
-     <img :src="logautIcon" alt="icon home" class="header--nav--img-home" @click="logaut">
+     <img :src="logautIcon" alt="icon home" class="header--nav--img-home" @click="handleLogout">
     </nav>
   </header>
 </template>
@@ -23,9 +23,12 @@ const pushRouter = () =>{
     router.push(allprops?.props?.ruot) 
 }
 
-const logaut =()=>{
-    router.push("/")
-}
+const handleLogout = () => {
+  localStorage.removeItem("userRole");
+  localStorage.removeItem("userName");
+  localStorage.removeItem("userId");
+  router.push("/");
+};
 
 
 </script>

@@ -28,11 +28,13 @@
 import { ref, reactive } from "vue";
 import { useRouter } from "vue-router";
 import { toast } from "vue3-toastify";
-
+import {usersData} from "../../constants/agents/index.js";
 import User from "../../assets/user.svg";
 import Open from "../../assets/open.svg";
 import Clos from "../../assets/clos.svg";
 import LoginImg from "../../assets/login-image.png";
+
+
 
 const router = useRouter();
 
@@ -49,9 +51,17 @@ const toggleOpen = () => {
 
 const handleLogin = () => {
   if (user.login.trim() && user.password.trim()) {
-    if (user.login === "Muhammadaziz" && user.password === "571633") {
+    const foundUser = usersData.find(
+      (u) => u.name === user.login.trim() && u.password === user.password.trim()
+    );
+
+    if (foundUser) {
       toast.success("Вход успешен!");
-      console.log("User login: " + user.login + " User password: " + user.password);
+
+      // Rolni va user ma'lumotlarini localStorage ga saqlash
+      localStorage.setItem("userRole", foundUser.rol);
+      localStorage.setItem("userName", foundUser.name);
+      localStorage.setItem("userId", foundUser.id);
 
       user.login = "";
       user.password = "";
