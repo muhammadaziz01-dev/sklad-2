@@ -1,38 +1,38 @@
 <template>
   <div class="agent-card">
-    <img :src="AdminImg" alt="Agent imag" class="agent-card--img" />
+    <img :src="agent?.img" alt="Agent imag" class="agent-card--img" />
     <div class="agent-card--info">
-      <h3 class="agent-card--info--title">Мухаммадазиз</h3>
+      <h3 class="agent-card--info--title">{{agent?.name}}</h3>
       <ul class="agent-card--info--property">
         <li class="agent-card--info--property--item">
           <div class="agent-card--info--property--text">Полное имя</div>
           <div class="agent-card--info--property--empty"></div>
-          <div class="agent-card--info--property--text">Акбаров Мухаммадазиз</div>
+          <div class="agent-card--info--property--text">{{agent?.fulName}}</div>
         </li>
         <li class="agent-card--info--property--item">
           <div class="agent-card--info--property--text">Номер телефона</div>
           <div class="agent-card--info--property--empty"></div>
-          <div class="agent-card--info--property--text"> <a href="tel:+996999142444">+996 999 142 444</a></div>
+          <div class="agent-card--info--property--text"> <a :href='agent?.phoneUrl'>{{agent?.phone}}</a></div>
         </li>
         <li class="agent-card--info--property--item">
           <div class="agent-card--info--property--text">Регион ответственности</div>
           <div class="agent-card--info--property--empty"></div>
-          <div class="agent-card--info--property--text">Ош</div>
+          <div class="agent-card--info--property--text">{{agent?.region}}</div>
         </li>
         <li class="agent-card--info--property--item">
           <div class="agent-card--info--property--text">Объем продаж за месяц</div>
           <div class="agent-card--info--property--empty"></div>
-          <div class="agent-card--info--property--text">3 450 500 сом</div>
+          <div class="agent-card--info--property--text">{{agent?.monthlySales + " " + agent?.currency }}</div>
         </li>
         <li class="agent-card--info--property--item">
           <div class="agent-card--info--property--text">Собрано за месяц</div>
           <div class="agent-card--info--property--empty"></div>
-          <div class="agent-card--info--property--text">2 450 000 сом</div>
+          <div class="agent-card--info--property--text">{{agent?.monthlyCollected + " " + agent?.currency }}</div>
         </li>
         <li class="agent-card--info--property--item">
           <div class="agent-card--info--property--text">Общая задолженность</div>
           <div class="agent-card--info--property--empty"></div>
-          <div class="agent-card--info--property--text">1 500 500 сом</div>
+          <div class="agent-card--info--property--text">{{agent?.totalDebt + " " + agent?.currency }}</div>
         </li>
       </ul>
     </div>
@@ -41,6 +41,10 @@
 
 <script setup>
 import AdminImg from "@/assets/agents/admin.jpg";
+const props = defineProps({
+  agent: Object
+})
+
 </script>
 
 <style scoped lang="scss">

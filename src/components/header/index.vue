@@ -15,7 +15,7 @@ import logautIcon from "../../assets/box-arrow-right.svg"
 
 const router = useRouter()
 
-const allprops = defineProps({
+defineProps({
     props: Object
 })
 
