@@ -13,10 +13,12 @@
         <p>Агенты</p>
       </div>
 
-      <div class="wrapper--menu--card">
+      <!-- Rolga qarab qo'shiladi yangi menyular -->
+
+      <!-- <div class="wrapper--menu--card">
         <img :src="Settings" alt="settings icon" />
         <p>Настройка</p>
-      </div>
+      </div> -->
     </div>
 
     <!-- MUHIM QISM -->
