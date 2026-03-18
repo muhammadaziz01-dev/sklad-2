@@ -1,4 +1,4 @@
-import Admin from "@/assets/agents/admin.jpg";
+import Admin from "@/assets/agents/admin.png";
 import AgentImg from "@/assets/agents/agent-img.png";
 
 
