@@ -91,7 +91,7 @@ const currentMonth = computed(() => {
 });
 
 const agentList = computed(() =>
-  props.agents.filter((a) => a.rol === "agent" || a.rol === "manager")
+  props.agents.filter((a) => a.rol === 'agent' || a.rol === 'manager' || a.rol === 'admin')
 );
 
 const totalSales = computed(() =>
