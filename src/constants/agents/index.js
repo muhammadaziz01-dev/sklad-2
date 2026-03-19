@@ -13,9 +13,9 @@ export const dataAgents = [
         phoneUrl : "tel:+996999142444",
         region : "Ош",
         currency:"сом",
-        monthlySales: 3450500,
-        monthlyCollected: 2450000,
-        totalDebt: 1500500,
+        monthlySales: 4450500,
+        monthlyCollected: 3450000,
+        totalDebt: 500500,
         rol: "admin"
     },
     {
@@ -55,8 +55,8 @@ export const dataAgents = [
         phoneUrl : "tel:+996700292906",
         region : "Ош",
         currency:"сом",
-        monthlySales: 3450500,
-        monthlyCollected: 2450000,
+        monthlySales: 2450500,
+        monthlyCollected: 1450000,
         totalDebt: 1500500,
         rol: "agent"
     },
@@ -69,9 +69,9 @@ export const dataAgents = [
         phoneUrl : "tel:+996557110046",
         region : "Кызыл-Кия , Кадамжай",
         currency:"сом",
-        monthlySales: 3450500,
-        monthlyCollected: 2450000,
-        totalDebt: 1500500,
+        monthlySales: 1450500,
+        monthlyCollected: 1450000,
+        totalDebt: 1000000,
         rol: "agent"
     },
     {
@@ -83,8 +83,8 @@ export const dataAgents = [
         phoneUrl : "tel:+996708161023",
         region : "Ош , Араван",
         currency:"сом",
-        monthlySales: 3450500,
-        monthlyCollected: 2450000,
+        monthlySales: 3850500,
+        monthlyCollected: 2850000,
         totalDebt: 1500500,
         rol: "agent"
     },
@@ -97,9 +97,9 @@ export const dataAgents = [
         phoneUrl : "tel:+996558745858",
         region : "Ош",
         currency:"сом",
-        monthlySales: 3450500,
+        monthlySales: 2450500,
         monthlyCollected: 2450000,
-        totalDebt: 1500500,
+        totalDebt: 150000,
         rol: "manager"
     },
     {
@@ -111,9 +111,9 @@ export const dataAgents = [
         phoneUrl : "tel:+996551220186",
         region : "Ош",
         currency:"сом",
-        monthlySales: 3450500,
-        monthlyCollected: 2450000,
-        totalDebt: 1500500,
+        monthlySales: 450500,
+        monthlyCollected: 450000,
+        totalDebt: 100500,
         rol: "agent"
     },
     {
@@ -126,8 +126,8 @@ export const dataAgents = [
         region : "Ош",
         currency:"сом",
         monthlySales: 3450500,
-        monthlyCollected: 2450000,
-        totalDebt: 1500500,
+        monthlyCollected: 1450000,
+        totalDebt: 2500500,
         rol: "agent"
     },
     {
@@ -153,9 +153,9 @@ export const dataAgents = [
         phoneUrl : "tel:+996550371792",
         region : "Джалал-Абад",
         currency:"сом",
-        monthlySales: 3450500,
+        monthlySales: 2450500,
         monthlyCollected: 2450000,
-        totalDebt: 1500500,
+        totalDebt: 200000,
         rol: "agent"
     },
     {
@@ -168,8 +168,8 @@ export const dataAgents = [
         region : "Кыргызстан",
         currency:"сом",
         monthlySales: 3450500,
-        monthlyCollected: 2450000,
-        totalDebt: 1500500,
+        monthlyCollected: 3450500,
+        totalDebt: 0,
         rol: "manager"
     },
 

@@ -1,5 +1,6 @@
 <template>
      <Navbar :props="propsDate"/>
+     <ChartAgents :agents="dataAgents" />
     <div class="wrapper-cards" v-for="el in dataAgents" :key="el?.id">
      <AgentCard :agent="el" />
 
@@ -10,6 +11,7 @@
 import Navbar from "../../components/header/index.vue"
 import AgentCard from "../../components/card/agent/index.vue"
 import {dataAgents} from "../../constants/agents/index.js"
+import ChartAgents from "@/components/chart/index.vue"
 const propsDate = {
   title :"Агенты",
   ruot: "/menu",
