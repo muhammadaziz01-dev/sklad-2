@@ -255,7 +255,7 @@ onBeforeUnmount(() => {
 .dashboard__title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #1a1a1a !important ;
   margin: 0 0 2px;
 }
 .dashboard__subtitle {
