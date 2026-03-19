@@ -215,6 +215,20 @@ export const usersData = [
         rol: "manager"
     },
     {
+        id:8,
+        name:"Козимжон",
+        password : "220186",
+        region : "Ош",
+        rol: "agent"
+    },
+    {
+        id:9,
+        name:"Хабибуллох",
+        password : "371792",
+        region : "Ош",
+        rol: "agent"
+    },
+    {
         id:12,
         name:"Холмухаммад",
         password : "434510",

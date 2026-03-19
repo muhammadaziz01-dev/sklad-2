@@ -5,6 +5,8 @@ import Agents from "../views/agents/index.vue";
 import SkladValfef from "../views/deshbordValfex/index.vue";
 import SkladdRTP from "../views/deshbordRTP/index.vue";
 import MenuPage from "@/views/menu/index.vue";
+import Profil from "@/views/profil/index.vue"
+import Sale from "@/views/sale/index.vue"
 import ErrorPage from "../views/error/index.vue";
 
 const routes = [
@@ -19,6 +21,18 @@ const routes = [
     name: "Menu",
     component: MenuPage,
     meta: { requiresAuth: true }, // Barcha login qilganlar
+  },
+  {
+    path: "/profil",
+    name: "Profil",
+    component: Profil,
+    meta: { requiresAuth: true }, 
+  },
+  {
+    path: "/sale",
+    name: "Sale",
+    component: Sale,
+    meta: { requiresAuth: true , roles:["admin"]}, 
   },
   {
     path: "/sklad",

@@ -13,9 +13,10 @@
         <img :src="AgentsImg" alt="agents icon" />
         <p>Агенты</p>
       </div>
-      <div class="wrapper--menu--card">
-        <img :src="Settings" alt="settings icon" />
-        <p>Настройка</p>
+
+      <div class="wrapper--menu--card" @click="pushRouter(`/sale`)" >
+        <img :src="Truck" alt="truck icon" />
+        <p>Продажа</p>
       </div>
     </div>
     
@@ -39,8 +40,8 @@
         <p>Склад</p>
       </div>
 
-      <div class="wrapper--menu--card" @click="pushRouter(`/agents`)">
-        <img :src="AgentsImg" alt="agents icon" />
+      <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
+        <img :src="Person" alt="agents icon" />
         <p>Профил</p>
       </div>
     </div>
@@ -54,6 +55,8 @@
 import Navbar from "../../components/header/index.vue"
 import Sklad from "../../assets/sclad.png"
 import AgentsImg from "../../assets/users.svg"
+import Person from "@/assets/person.svg"
+import Truck from "@/assets/truck.svg"
 import Settings from "../../assets/gear.svg"
 import { useRouter } from "vue-router"
 import { ref } from "vue";

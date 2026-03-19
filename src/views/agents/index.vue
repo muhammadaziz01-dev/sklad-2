@@ -1,7 +1,7 @@
 <template>
      <Navbar :props="propsDate"/>
-    <div class="wrapper-cards" v-for="el in dataAgents">
-     <AgentCard :agent="el" :key="el?.id" />
+    <div class="wrapper-cards" v-for="el in dataAgents" :key="el?.id">
+     <AgentCard :agent="el" />
 
     </div>
 </template>
