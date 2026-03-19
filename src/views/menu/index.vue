@@ -18,6 +18,11 @@
         <img :src="Truck" alt="truck icon" />
         <p>Продажа</p>
       </div>
+
+      <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
+        <img :src="Person" alt="agents icon" />
+        <p>Профил</p>
+      </div>
     </div>
     
      <!-- Faqat manager uchun -->
@@ -30,6 +35,11 @@
       <div class="wrapper--menu--card" @click="pushRouter(`/agents`)">
         <img :src="AgentsImg" alt="agents icon" />
         <p>Агенты</p>
+      </div>
+
+      <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
+        <img :src="Person" alt="agents icon" />
+        <p>Профил</p>
       </div>
     </div>
 
