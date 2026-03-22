@@ -59,9 +59,9 @@ const handleLogin = () => {
       toast.success("Вход успешен!");
 
       // Rolni va user ma'lumotlarini localStorage ga saqlash
-      localStorage.setItem("userRole", foundUser.rol);
-      localStorage.setItem("userName", foundUser.name);
-      localStorage.setItem("userId", foundUser.id);
+      sessionStorage.setItem("userRole", foundUser.rol);
+      sessionStorage.setItem("userName", foundUser.name);
+      sessionStorage.setItem("userId", foundUser.id);
 
       user.login = "";
       user.password = "";

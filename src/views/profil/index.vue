@@ -17,7 +17,7 @@ const propsDate = {
 };
 
 
-const userId = ref(localStorage.getItem("userId") || "");
+const userId = ref(sessionStorage.getItem("userId") || "");
 
 const filterData = computed(() => {
     return dataAgents.filter((el) => el?.id == userId.value)

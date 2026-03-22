@@ -9,7 +9,7 @@ import krestavinaRTP from "@/assets/productImgs/rtp/krestavinaRTP.jpg";
 import ugolNrRTP from "@/assets/productImgs/rtp/ugolNrRTP.webp";
 
 // RTP praduct data
-const dataRTP = [
+export const dataRTP = [
   {
     id: 1,
     img: trubaRtp,

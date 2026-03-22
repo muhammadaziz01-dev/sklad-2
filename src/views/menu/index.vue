@@ -76,7 +76,7 @@ const propsDate = {
 }
 
 const router = useRouter()
-const userRole = ref(localStorage.getItem("userRole") || "");
+const userRole = ref(sessionStorage.getItem("userRole") || "");
 
 const pushRouter = (link) => {
   router.push(link)

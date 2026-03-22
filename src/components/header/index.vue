@@ -24,9 +24,9 @@ const pushRouter = () =>{
 }
 
 const handleLogout = () => {
-  localStorage.removeItem("userRole");
-  localStorage.removeItem("userName");
-  localStorage.removeItem("userId");
+    sessionStorage.removeItem("userRole");
+    sessionStorage.removeItem("userName");
+    sessionStorage.removeItem("userId");
   router.push("/");
 };
 

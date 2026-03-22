@@ -1,15 +1,13 @@
 <template>
   <Navbar :props="propsDate" />
-  <div class="wrapper-cards ">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam autem error aliquam,
-      minima excepturi, id cumque at ullam temporibus qui accusantium iste voluptatum!
-    </p>
+  <div class="">
+     <Saleview/>
   </div>
 </template>
 
 <script setup>
 import Navbar from "../../components/header/index.vue";
+import Saleview from "@/views/saleview/index.vue"
 
 const propsDate = {
   title: "Продажа",

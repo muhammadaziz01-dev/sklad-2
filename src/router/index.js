@@ -5,9 +5,22 @@ import Agents from "../views/agents/index.vue";
 import SkladValfef from "../views/deshbordValfex/index.vue";
 import SkladdRTP from "../views/deshbordRTP/index.vue";
 import MenuPage from "@/views/menu/index.vue";
-import Profil from "@/views/profil/index.vue"
-import Sale from "@/views/sale/index.vue"
+import Profil from "@/views/profil/index.vue";
+import Sale from "@/views/sale/index.vue";
 import ErrorPage from "../views/error/index.vue";
+
+// ✅ Mobil uchun: ilova background/yopilganda sessionStorage tozalansin
+// visibilitychange - tab yashirilganda (mobilda background)
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") {
+    sessionStorage.removeItem("userRole");
+  }
+});
+
+// pagehide - sahifa yopilganda yoki navigatsiya chiqganda (mobilda ishonchli)
+window.addEventListener("pagehide", () => {
+  sessionStorage.removeItem("userRole");
+});
 
 const routes = [
   {
@@ -20,37 +33,37 @@ const routes = [
     path: "/menu",
     name: "Menu",
     component: MenuPage,
-    meta: { requiresAuth: true }, // Barcha login qilganlar
+    meta: { requiresAuth: true },
   },
   {
     path: "/profil",
     name: "Profil",
     component: Profil,
-    meta: { requiresAuth: true }, 
+    meta: { requiresAuth: true },
   },
   {
     path: "/sale",
     name: "Sale",
     component: Sale,
-    meta: { requiresAuth: true , roles:["admin"]}, 
+    meta: { requiresAuth: true, roles: ["admin"] },
   },
   {
     path: "/sklad",
     name: "Skald",
     component: Sklad,
-    meta: { requiresAuth: true, roles: ["admin", "manager", "agent"] }, // faqat admin va manager
+    meta: { requiresAuth: true, roles: ["admin", "manager", "agent"] },
     children: [
       {
         path: "",
         name: "SkladRTP",
         component: SkladdRTP,
-        meta: { requiresAuth: true, roles: ["admin", "manager","agent"] },
+        meta: { requiresAuth: true, roles: ["admin", "manager", "agent"] },
       },
       {
         path: "valfex",
         name: "SkladValfef",
         component: SkladValfef,
-        meta: { requiresAuth: true, roles: ["admin", "manager","agent"] },
+        meta: { requiresAuth: true, roles: ["admin", "manager", "agent"] },
       },
     ],
   },
@@ -58,7 +71,7 @@ const routes = [
     path: "/agents",
     name: "Agents",
     component: Agents,
-    meta: { requiresAuth: true, roles: ["admin", "manager"] }, // faqat admin
+    meta: { requiresAuth: true, roles: ["admin", "manager"] },
   },
   {
     path: "/:pathMatch(.*)*",
@@ -74,30 +87,31 @@ const router = createRouter({
 
 // 🔐 Navigation Guard
 router.beforeEach((to, from, next) => {
-  const userRole = localStorage.getItem("userRole");
+  // ✅ localStorage emas, sessionStorage ishlatiladi
+  const userRole = sessionStorage.getItem("userRole");
   const isAuthenticated = !!userRole;
 
-  // 1. Login sahifasiga har doim kirish mumkin
-  if (!to.meta.requiresAuth) {
-    // Agar login qilgan bo'lsa, loginga qaytmasin
-    if (isAuthenticated && to.name === "Login") {
-      return next({ name: "Menu" });
-    }
+  // 1. Login sahifasiga har doim kirish mumkin (redirect yo'q)
+  if (to.name === "Login") {
     return next();
   }
 
-  // 2. Login qilmagan bo'lsa → loginга redirect
+  // 2. requiresAuth yo'q sahifalar uchun
+  if (!to.meta.requiresAuth) {
+    return next();
+  }
+
+  // 3. Login qilmagan bo'lsa → Login ga redirect
   if (!isAuthenticated) {
     return next({ name: "Login" });
   }
 
-  // 3. Sahifada rol cheklovi bormi?
+  // 4. Rol cheklovi tekshirish
   if (to.meta.roles && !to.meta.roles.includes(userRole)) {
-    // Ruxsat yo'q → menyuga qaytarish
     return next({ name: "Menu" });
   }
 
-  // 4. Hammasi OK → sahifaga o'tish
+  // 5. Hammasi OK
   next();
 });
 
