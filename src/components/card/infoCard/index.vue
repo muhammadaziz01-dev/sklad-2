@@ -1,5 +1,5 @@
 <template>
-    <div class="info-card">
+    <div class="info-card" v-if="userRole !== 'agent'" >
       <div class="info-card--title">
         <p>Складская стоимость</p>
         <img :src="Sclad" alt="Sclad icon" class="info-card--title--img"  >
@@ -22,6 +22,7 @@ defineProps({
   count: Number,
   total: Number
 })
+const userRole = localStorage.getItem("userRole");
 </script>
 
 <style lang="scss" scoped src="./style.scss">

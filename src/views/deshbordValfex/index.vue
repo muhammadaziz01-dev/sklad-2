@@ -31,7 +31,7 @@
               <div class="wrapper--parent-card--card--wrapper-title--property__empty"></div>
               <div class="wrapper--parent-card--card--wrapper-title--property__text">{{ item?.allResidual + " " + item?.unit }}</div>
             </li>
-            <li class="wrapper--parent-card--card--wrapper-title--property__item">
+            <li class="wrapper--parent-card--card--wrapper-title--property__item" v-if="userRole !== 'agent'">
               <div class="wrapper--parent-card--card--wrapper-title--property__text">Оставшаяся сумма </div>
               <div class="wrapper--parent-card--card--wrapper-title--property__empty"></div>
               <div class="wrapper--parent-card--card--wrapper-title--property__text">{{ item?.residualValue }} сом</div>
@@ -46,6 +46,8 @@
 <script setup>
 import{ allDataValfex , productsCountValfex , totalResidualValueValfex} from "../../constants/valfex/index.js"
 import InfoCard from "../../components/card/infoCard/index.vue"
+const userRole = localStorage.getItem("userRole");
+
 
 </script>
 

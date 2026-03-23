@@ -88,7 +88,7 @@ const router = createRouter({
 // 🔐 Navigation Guard
 router.beforeEach((to, from, next) => {
   // ✅ localStorage emas, sessionStorage ishlatiladi
-  const userRole = sessionStorage.getItem("userRole");
+  const userRole = localStorage.getItem("userRole");
   const isAuthenticated = !!userRole;
 
   // 1. Login sahifasiga har doim kirish mumkin (redirect yo'q)
