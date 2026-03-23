@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <!-- Shu yerda router-view barcha sahifalarni ko'rsatadi -->
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
-};
+  name: 'App',
+  mounted() {
+    window.addEventListener('pagehide', () => {
+      sessionStorage.removeItem('userRole')
+      sessionStorage.removeItem('userName')
+      sessionStorage.removeItem('userId')
+    })
+  }
+}
 </script>
 
 <style>
-
-
-
 </style>
