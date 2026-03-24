@@ -299,7 +299,9 @@ export const dataValfex = [
 ];
 
 // Valfex praduct list export
-export const allDataValfex = dataValfex.map((item) => ({
+export const allDataValfex = dataValfex
+.filter((item) => item.isActive)
+.map((item)=>({
   ...item,
   residualValue: item.price * item.allResidual,
 }));

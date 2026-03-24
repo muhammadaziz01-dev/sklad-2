@@ -234,11 +234,12 @@ export const dataRTP = [
 ];
 
 // RTP praduct list export
-export const allDataRTP = dataRTP.map((item) => ({
-  ...item,
-  residualValue: item.price * item.allResidual,
+export const allDataRTP = dataRTP
+.filter((itim)=>itim.isActive)
+.map((itim)=>({
+  ...itim,
+  residualValue:itim.price * itim.allResidual
 }));
-
 
 // products count
 export const productsCount = allDataRTP.length;

@@ -16,9 +16,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'icon-192.png', 'icon-512.png'],
       manifest: {
-        name: 'Sklad',
-        short_name: 'Sklad',
-        description: 'Sklad boshqaruv tizimi',
+        name: 'Мой склад',
+        short_name: 'Мой склад',
+        description: 'Система управления складом',
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',
