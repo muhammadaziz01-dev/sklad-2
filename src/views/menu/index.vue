@@ -9,6 +9,11 @@
         <p>Склад</p>
       </div>
 
+      <div class="wrapper--menu--card" @click="pushRouter(`/sklad-adir`)">
+        <img :src="skladAdir" alt="sclad icon" />
+        <p>Склад адир</p>
+      </div>
+
       <div class="wrapper--menu--card" @click="pushRouter(`/agents`)">
         <img :src="AgentsImg" alt="agents icon" />
         <p>Агенты</p>
@@ -30,6 +35,11 @@
       <div class="wrapper--menu--card" @click="pushRouter(`/sklad`)">
         <img :src="Sklad" alt="sclad icon" />
         <p>Склад</p>
+      </div>
+
+      <div class="wrapper--menu--card" @click="pushRouter(`/sklad-adir`)">
+        <img :src="skladAdir" alt="sclad icon" />
+        <p>Склад адир</p>
       </div>
 
       <div class="wrapper--menu--card" @click="pushRouter(`/agents`)">
@@ -67,6 +77,7 @@ import Sklad from "../../assets/sclad.png"
 import AgentsImg from "../../assets/users.svg"
 import Person from "@/assets/person.svg"
 import Truck from "@/assets/truck.svg"
+import skladAdir from "@/assets/skladAdir.svg"
 import Settings from "../../assets/gear.svg"
 import { useRouter } from "vue-router"
 import { ref } from "vue";
