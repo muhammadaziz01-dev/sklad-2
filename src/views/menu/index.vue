@@ -37,11 +37,6 @@
         <p>Склад</p>
       </div>
 
-      <div class="wrapper--menu--card" @click="pushRouter(`/sklad-adir`)">
-        <img :src="skladAdir" alt="sclad icon" />
-        <p>Склад адир</p>
-      </div>
-
       <div class="wrapper--menu--card" @click="pushRouter(`/agents`)">
         <img :src="AgentsImg" alt="agents icon" />
         <p>Агенты</p>
@@ -50,6 +45,11 @@
       <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
         <img :src="Person" alt="agents icon" />
         <p>Профил</p>
+      </div>
+
+      <div class="wrapper--menu--card" @click="pushRouter(`/sklad-adir`)">
+        <img :src="skladAdir" alt="sclad icon" />
+        <p>Склад адир</p>
       </div>
     </div>
 
