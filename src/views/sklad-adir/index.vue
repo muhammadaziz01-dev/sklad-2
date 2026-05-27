@@ -1,3 +1,16 @@
+<script setup>
+import Navbar from "../../components/header/index.vue";
+import{ allDataRTP , productsCount , totalResidualValue} from "../../constants/rtp/index.js"
+import InfoCard from "../../components/card/infoCard/index.vue"
+
+const userRole = localStorage.getItem("userRole");
+
+const propsDate = {
+  title: "Склад адир",
+  ruot: "/menu",
+};
+</script>
+
 <template>
     <Navbar :props="propsDate" />
     <div class="wrapper">
@@ -43,19 +56,6 @@
   </div>
 
 </template>
-
-<script setup>
-import Navbar from "../../components/header/index.vue";
-import{ allDataRTP , productsCount , totalResidualValue} from "../../constants/rtp/index.js"
-import InfoCard from "../../components/card/infoCard/index.vue"
-
-const userRole = localStorage.getItem("userRole");
-
-const propsDate = {
-  title: "Склад адир",
-  ruot: "/menu",
-};
-</script>
 
 <style lang="scss" scoped src="./style.scss">
 
