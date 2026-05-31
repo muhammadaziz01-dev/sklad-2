@@ -1,4 +1,4 @@
-import trubaPPRPN20PRT from "@/assets/productImgs/rtp/trubaPPRPN20.png";
+// import trubaPPRPN20PRT from "@/assets/productImgs/rtp/trubaPPRPN20.png";
 import trubaRtp from "@/assets/productImgs/rtp/trubaPPR.webp";
 import toplipolRTP from "@/assets/productImgs/rtp/toplipolRTP.webp";
 import skobaRTP from "@/assets/productImgs/rtp/skobaRTP.webp";
