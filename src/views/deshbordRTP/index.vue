@@ -6,7 +6,7 @@
     :count="productsCount"
     :total="totalResidualValue" />
     <div class="wrapper--parent-card">
-      <div class="wrapper--parent-card--card" v-for="item in allDataRTP" :key="item.id">
+      <div class="wrapper--parent-card--card" v-for="item in allDataRTPAdir" :key="item.id">
         <img :src="item.img" alt="Truba PPR" class="wrapper--parent-card--card--img" />
         <div class="wrapper--parent-card--card--wrapper-title">
           <p>{{ item.name }}</p>
@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-import{ allDataRTP , productsCount , totalResidualValue} from "../../constants/rtp/index.js"
+import{ allDataRTPAdir , productsCount , totalResidualValue} from "../../constants/data-rtp-adir/index.js"
 import InfoCard from "../../components/card/infoCard/index.vue"
 
 const userRole = localStorage.getItem("userRole");

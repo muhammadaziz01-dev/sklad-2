@@ -1,6 +1,6 @@
 // stores/sotuvStore.js
 import { defineStore } from "pinia";
-import { dataRTP } from "@/constants/rtp/index.js";
+import { dataRTPAdir } from "@/constants/data-rtp-adir/index.js";
 import { dataValfex } from "@/constants/valfex/index.js";
 import { dataAgents } from "@/constants/agents";
 
@@ -8,7 +8,7 @@ export const useSotuvStore = defineStore("sotuv", {
   state: () => ({
     // Barcha mahsulotlar (faqat isActive: true bo'lganlar)
     allProducts: [
-      ...dataRTP.filter((p) => p.isActive),
+      ...dataRTPAdir.filter((p) => p.isActive),
       ...dataValfex.filter((p) => p.isActive),
     ],
 
