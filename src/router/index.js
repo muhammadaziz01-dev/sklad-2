@@ -8,6 +8,8 @@ import MenuPage from "@/views/menu/index.vue";
 import Profil from "@/views/profil/index.vue";
 import Sale from "@/views/sale/index.vue";
 import ScladAdir from "@/views/sklad-adir/index.vue"
+import ScladAdirRtp from "@/views/sklad-adir/rtp.vue"
+import ScladAdirValfex from "@/views/sklad-adir/valfex.vue"
 import ErrorPage from "../views/error/index.vue";
 
 // ✅ Mobil uchun: ilova background/yopilganda sessionStorage tozalansin
@@ -79,6 +81,20 @@ const routes = [
     name: "Sklad-Adir",
     component: ScladAdir,
     meta: { requiresAuth: true, roles: ["admin", "manager"] },
+    children: [
+      {
+        path: "",
+        name: "SkladAdirRTP",
+        component: ScladAdirRtp,
+        meta: { requiresAuth: true, roles: ["admin", "manager", ] },
+      },
+      {
+        path: "valfex",
+        name: "SkladValfexValfef",
+        component: ScladAdirValfex,
+        meta: { requiresAuth: true, roles: ["admin", "manager", ] },
+      },
+    ],
   },
   {
     path: "/:pathMatch(.*)*",

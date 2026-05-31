@@ -32,7 +32,7 @@
     
      <!-- Faqat manager uchun -->
     <div class="wrapper--menu" v-if="userRole === 'manager'" >
-      <div class="wrapper--menu--card" @click="pushRouter(`/sklad`)">
+      <!-- <div class="wrapper--menu--card" @click="pushRouter(`/sklad`)">
         <img :src="Sklad" alt="sclad icon" />
         <p>Склад</p>
       </div>
@@ -40,6 +40,11 @@
       <div class="wrapper--menu--card" @click="pushRouter(`/agents`)">
         <img :src="AgentsImg" alt="agents icon" />
         <p>Агенты</p>
+      </div> -->
+
+      <div class="wrapper--menu--card" @click="pushRouter(`/sklad-adir`)">
+        <img :src="skladAdir" alt="sclad icon" />
+        <p>Склад адир</p>
       </div>
 
       <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
@@ -47,18 +52,14 @@
         <p>Профил</p>
       </div>
 
-      <div class="wrapper--menu--card" @click="pushRouter(`/sklad-adir`)">
-        <img :src="skladAdir" alt="sclad icon" />
-        <p>Склад адир</p>
-      </div>
     </div>
 
      <!-- Faqat agent uchun -->
      <div class="wrapper--menu" v-if="userRole === 'agent'" >
-      <div class="wrapper--menu--card" @click="pushRouter(`/sklad`)">
+      <!-- <div class="wrapper--menu--card" @click="pushRouter(`/sklad`)">
         <img :src="Sklad" alt="sclad icon" />
         <p>Склад</p>
-      </div>
+      </div> -->
 
       <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
         <img :src="Person" alt="agents icon" />

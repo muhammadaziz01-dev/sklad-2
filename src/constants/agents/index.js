@@ -97,9 +97,9 @@ export const dataAgents = [
         phoneUrl : "tel:+996558745858",
         region : "Ош",
         currency:"сом",
-        monthlySales: 2450500,
-        monthlyCollected: 2450000,
-        totalDebt: 150000,
+        monthlySales: 0,
+        monthlyCollected: 0,
+        totalDebt: 0,
         rol: "manager"
     },
     {
@@ -167,8 +167,8 @@ export const dataAgents = [
         phoneUrl : "tel:+996550434510",
         region : "Кыргызстан",
         currency:"сом",
-        monthlySales: 3450500,
-        monthlyCollected: 3450500,
+        monthlySales: 0,
+        monthlyCollected: 0,
         totalDebt: 0,
         rol: "manager"
     },
