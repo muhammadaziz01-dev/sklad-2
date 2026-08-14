@@ -4787,10 +4787,6 @@ export const dataValfex = [
   },
 ];
 
-//// test yakuni
-
-
-
 // Valfex praduct list export
 export const allDataValfexAdir = dataValfex
   .filter((itim) => itim.isActive)
