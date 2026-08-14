@@ -47,6 +47,11 @@
         <p>Склад адир</p>
       </div>
 
+      <div class="wrapper--menu--card" @click="pushRouter(`/agents`)">
+        <img :src="AgentsImg" alt="agents icon" />
+        <p>Агенты</p>
+      </div>
+
       <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
         <img :src="Person" alt="agents icon" />
         <p>Профил</p>

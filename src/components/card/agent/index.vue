@@ -20,12 +20,12 @@
           <div class="agent-card--info--property--text">{{agent?.region}}</div>
         </li>
         <li class="agent-card--info--property--item">
-          <div class="agent-card--info--property--text">Объем продаж за месяц</div>
+          <div class="agent-card--info--property--text">Объем продаж </div>
           <div class="agent-card--info--property--empty"></div>
           <div class="agent-card--info--property--text">{{agent?.monthlySales + " " + agent?.currency }}</div>
         </li>
         <li class="agent-card--info--property--item">
-          <div class="agent-card--info--property--text">Собрано за месяц</div>
+          <div class="agent-card--info--property--text">Собрано </div>
           <div class="agent-card--info--property--empty"></div>
           <div class="agent-card--info--property--text">{{agent?.monthlyCollected + " " + agent?.currency }}</div>
         </li>
