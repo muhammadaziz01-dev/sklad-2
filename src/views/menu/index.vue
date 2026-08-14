@@ -25,6 +25,11 @@
       </div>
 
       <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
+        <img :src="IconAstatok" alt=" icon" />
+        <p>Oстатка</p>
+      </div>
+
+      <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
         <img :src="Person" alt="agents icon" />
         <p>Профил</p>
       </div>
@@ -84,6 +89,7 @@ import AgentsImg from "../../assets/users.svg"
 import Person from "@/assets/person.svg"
 import Truck from "@/assets/truck.svg"
 import skladAdir from "@/assets/skladAdir.svg"
+import IconAstatok from "@/assets/iconAstatok.svg"
 import Settings from "../../assets/gear.svg"
 import { useRouter } from "vue-router"
 import { ref } from "vue";

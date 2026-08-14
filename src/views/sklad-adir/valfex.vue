@@ -1,14 +1,12 @@
 <script setup>
 import {
-    allDataValfexAdir,
+  allDataValfexAdir,
   productsCount,
   totalResidualValue,
 } from "../../constants/data-rtp-adir/data-valfex-adir.js";
 import InfoCard from "../../components/card/infoCard/index.vue";
 
 const userRole = localStorage.getItem("userRole");
-
-
 </script>
 
 <template>
@@ -21,10 +19,9 @@ const userRole = localStorage.getItem("userRole");
         v-for="item in allDataValfexAdir"
         :key="item.id"
       >
-      <div class="wrapper--parent-card--card--img-container">
-
-<img :src="item.img" alt="Truba PPR" class="wrapper--parent-card--card--img" />
-</div>
+        <div class="wrapper--parent-card--card--img-container">
+          <img :src="item.img" alt="Truba PPR" class="wrapper--parent-card--card--img" />
+        </div>
         <div class="wrapper--parent-card--card--wrapper-title">
           <p>{{ item.name }}</p>
           <ul class="wrapper--parent-card--card--wrapper-title--property">
@@ -100,7 +97,7 @@ const userRole = localStorage.getItem("userRole");
     padding-bottom: 20px;
 
     span {
-      color: #D70000;
+      color: #d70000;
     }
   }
 
@@ -115,27 +112,27 @@ const userRole = localStorage.getItem("userRole");
 
     &--card {
       display: flex;
-        flex-direction: column;
-        justify-content: space-between; 
-        height: 100%; 
-        padding: 10px 7px 15px 7px;
-        border-radius: 10px;
-        box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      padding: 10px 7px 15px 7px;
+      border-radius: 10px;
+      box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
 
-        &--img-container {
-            width: 100%;
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
+      &--img-container {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
 
-        &--img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; 
-        }
+      &--img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
 
       &--wrapper-title {
         p {
