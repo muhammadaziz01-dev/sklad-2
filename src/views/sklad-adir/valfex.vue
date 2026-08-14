@@ -21,7 +21,10 @@ const userRole = localStorage.getItem("userRole");
         v-for="item in allDataValfexAdir"
         :key="item.id"
       >
-        <img :src="item.img" alt="Truba PPR" class="wrapper--parent-card--card--img" />
+      <div class="wrapper--parent-card--card--img-container">
+
+<img :src="item.img" alt="Truba PPR" class="wrapper--parent-card--card--img" />
+</div>
         <div class="wrapper--parent-card--card--wrapper-title">
           <p>{{ item.name }}</p>
           <ul class="wrapper--parent-card--card--wrapper-title--property">
@@ -108,21 +111,31 @@ const userRole = localStorage.getItem("userRole");
     grid-template-columns: auto auto;
     gap: 10px;
     padding: 5px;
-    margin: 0 auto;
     margin-top: 10px;
 
     &--card {
       display: flex;
-      align-items: start;
-      flex-direction: column;
-      // border: 1px solid gray;
-      padding: 0px 5px 15px 5px;
-      border-radius: 10px;
-      box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        justify-content: space-between; 
+        height: 100%; 
+        padding: 10px 7px 15px 7px;
+        border-radius: 10px;
+        box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
 
-      &--img {
-        width: 180px;
-      }
+        &--img-container {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; 
+        }
 
       &--wrapper-title {
         p {
