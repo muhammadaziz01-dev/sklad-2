@@ -172,6 +172,20 @@ export const dataAgents = [
         totalDebt: 211400,
         rol: "manager"
     },
+    {
+        id:13,
+        name:"Перемещение",
+        fulName: "Перемещение cклад ",
+        img: AgentImg ,
+        phone: "",
+        phoneUrl : "",
+        region : "Склад калелин калхоз",
+        currency:"сом",
+        monthlySales: 271290,
+        monthlyCollected: 0,
+        totalDebt: 271290,
+        rol: "agent"
+    },
 
 
 ]

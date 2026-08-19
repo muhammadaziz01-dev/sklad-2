@@ -3,7 +3,7 @@ import {
   allDataValfexAdir,
   productsCount,
   totalResidualValue,
-} from "../../constants/data-rtp-adir/data-valfex-adir.js";
+} from "../../constants/data-adir/data-valfex-adir.js";
 import InfoCard from "../../components/card/infoCard/index.vue";
 
 const userRole = localStorage.getItem("userRole");

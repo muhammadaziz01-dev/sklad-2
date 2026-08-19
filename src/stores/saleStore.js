@@ -1,9 +1,11 @@
 // stores/sotuvStore.js
 import { defineStore } from "pinia";
-import { dataRTPAdir } from "@/constants/data-rtp-adir/index.js";
-import { dataValfex } from "@/constants/valfex/index.js";
+import { dataRTPAdir } from "@/constants/data-adir/index.js";
+import { dataValfex } from "@/constants/data-adir/data-valfex-adir.js";
 import { dataAgents } from "@/constants/agents";
 
+
+console.log(dataValfex)
 export const useSotuvStore = defineStore("sotuv", {
   state: () => ({
     // Barcha mahsulotlar (faqat isActive: true bo'lganlar)

@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-import{ allDataRTPAdir , productsCount , totalResidualValue} from "../../constants/data-rtp-adir/index.js"
+import{ allDataRTPAdir , productsCount , totalResidualValue} from "../../constants/data-adir/index.js"
 import InfoCard from "../../components/card/infoCard/index.vue"
 
 const userRole = localStorage.getItem("userRole");
