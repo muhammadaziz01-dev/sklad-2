@@ -3575,7 +3575,7 @@ export const dataValfex = [
     name: "Отвод 45° 160ф рыжый VALFEX",
     brand: "VALFEX",
     quantity: "15 шт",
-    price: 315,
+    price: 320,
     unit: "шт",
     category: "fitingNK",
     categoryName: "Фитинги НК",
