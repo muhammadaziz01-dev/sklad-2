@@ -3,7 +3,7 @@ import AgentImg from "@/assets/agents/agent-img.png";
 
 
 
-export const dataAgents = [
+export const agents = [
     // {
     //     id:1,
     //     name:"Мухаммадазиз",
@@ -189,6 +189,14 @@ export const dataAgents = [
 
 
 ]
+
+
+const sortAgentsByDebt = (agents) => {
+    return [...agents].sort((a, b) => b.totalDebt - a.totalDebt);
+};
+
+
+export const dataAgents = sortAgentsByDebt(agents)
 
 
 export const usersData = [
