@@ -2413,7 +2413,7 @@ export const dataValfex = [
   },
 
   {
-    id: 1492324,
+    id: 14923244,
     img: vtulka,
     name: "Втулка защитная красный  16, 20 VALFEX",
     brand: "VALFEX",
