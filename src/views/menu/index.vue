@@ -4,10 +4,10 @@
 
     <!-- Faqat admin uchun -->
     <div class="wrapper--menu" v-if="userRole === 'admin'" >
-      <div class="wrapper--menu--card" @click="pushRouter(`/sklad`)">
+      <!-- <div class="wrapper--menu--card" @click="pushRouter(`/sklad`)">
         <img :src="Sklad" alt="sclad icon" />
         <p>Склад</p>
-      </div>
+      </div> -->
 
       <div class="wrapper--menu--card" @click="pushRouter(`/sklad-adir`)">
         <img :src="skladAdir" alt="sclad icon" />
@@ -24,9 +24,9 @@
         <p>Продажа</p>
       </div>
 
-      <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
+      <div class="wrapper--menu--card" @click="pushRouter(`/remainder`)">
         <img :src="IconAstatok" alt=" icon" />
-        <p>Oстатка</p>
+        <p>Остаток</p>  
       </div>
 
       <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">

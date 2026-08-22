@@ -1,0 +1,19 @@
+.dashboard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 7px;
+    gap: 20px;
+
+    &--navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        img {
+            width: 100px;
+        }
+    }
+}

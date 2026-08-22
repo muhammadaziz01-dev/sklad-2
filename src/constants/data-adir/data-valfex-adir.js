@@ -2500,7 +2500,7 @@ export const dataValfex = [
     unit: "шт",
     category: "trubaVK",
     categoryName: "Труба ВК",
-    allResidual: 960,
+    allResidual: 720,
     residualValue: "",
     isActive: true,
   },

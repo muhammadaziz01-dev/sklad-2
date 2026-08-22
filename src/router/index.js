@@ -10,6 +10,7 @@ import Sale from "@/views/sale/index.vue";
 import ScladAdir from "@/views/sklad-adir/index.vue"
 import ScladAdirRtp from "@/views/sklad-adir/rtp.vue"
 import ScladAdirValfex from "@/views/sklad-adir/valfex.vue"
+import Remainder from "@/views/remainder/index.vue"
 import ErrorPage from "../views/error/index.vue";
 
 // ✅ Mobil uchun: ilova background/yopilganda sessionStorage tozalansin
@@ -95,6 +96,12 @@ const routes = [
         meta: { requiresAuth: true, roles: ["admin", "manager", ] },
       },
     ],
+  },
+  {
+    path:"/remainder",
+    name:"Remainder",
+    component : Remainder,
+    meta: {requiresAuth:true , roles:["admin" ,"manager"]}
   },
   {
     path: "/:pathMatch(.*)*",
