@@ -2373,14 +2373,14 @@ export const dataValfex = [
     img: lenta,
     name: "Демпферная лента 100х8мм (25пог.м) VALFEX",
     brand: "VALFEX",
-    quantity: "24/1 рул",
+    quantity: "12/1 рул",
     price: 385,
     unit: "рул",
     category: "trubaPERT",
     categoryName: "Труба PERT",
-    allResidual: 1152,
+    allResidual: 576,
     residualValue: "",
-    isActive: false,
+    isActive: true,
   },
   {
     id: 156,
@@ -2394,7 +2394,7 @@ export const dataValfex = [
     categoryName: "Труба PERT",
     allResidual: 169,
     residualValue: "",
-    isActive: false,
+    isActive: true,
   },
 // vtulka 
   {
