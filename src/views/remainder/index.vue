@@ -58,7 +58,7 @@
         <div class="dashboard--totals">
           <div class="dashboard--totals__row">
             <span>Общая позиция:</span>
-            <span>{{ totalCount }} тур</span>
+            <span>{{ totalCount }} типа</span>
           </div>
           <div class="dashboard--totals__row total">
             <span>Общая сумма:</span>

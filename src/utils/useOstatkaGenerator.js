@@ -75,7 +75,7 @@ import {
             new Paragraph({ text: `Дата: ${date}`, spacing: { after: 200 } }),
             table,
             new Paragraph({ text: "", spacing: { after: 200 } }),
-            new Paragraph({ children: [new TextRun({ text: `Общая позиция: ${totalCount} тур` })] }),
+            new Paragraph({ children: [new TextRun({ text: `Общая позиция: ${totalCount} типа` })] }),
             new Paragraph({ children: [new TextRun({ text: `Общая сумма: ${totalSum.toLocaleString("ru-RU")} сом`, bold: true, size: 26 })] }),
           ],
         },
