@@ -57,6 +57,11 @@
         <p>Агенты</p>
       </div>
 
+      <div class="wrapper--menu--card" @click="pushRouter(`/remainder`)">
+        <img :src="IconAstatok" alt=" icon" />
+        <p>Остаток</p>  
+      </div>
+
       <div class="wrapper--menu--card" @click="pushRouter(`/profil`)">
         <img :src="Person" alt="agents icon" />
         <p>Профил</p>
