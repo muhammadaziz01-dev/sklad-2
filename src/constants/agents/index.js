@@ -167,9 +167,9 @@ export const agents = [
         phoneUrl : "tel:+996550434510",
         region : "Кыргызстан",
         currency:"сом",
-        monthlySales: 211400,
+        monthlySales: 424330,
         monthlyCollected: 0,
-        totalDebt: 211400,
+        totalDebt: 424330,
         rol: "manager"
     },
     {
@@ -181,9 +181,9 @@ export const agents = [
         phoneUrl : "",
         region : "Склад калелин калхоз",
         currency:"сом",
-        monthlySales: 2526615,
+        monthlySales: 2845145,
         monthlyCollected: 0,
-        totalDebt: 2526615,
+        totalDebt: 2845145,
         rol: "agent"
     },
 
