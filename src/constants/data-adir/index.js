@@ -221,7 +221,7 @@ export const dataRTPAdir = [
     residualValue: "",
     isActive: false,
   },
-  {
+  { 
     id: 8,
     img: trubaRtp,
     name: "Труба PPR GF\\PPR 32x5,4 (PN 25) 4м белый RTP",
