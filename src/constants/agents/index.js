@@ -83,9 +83,9 @@ export const agents = [
         phoneUrl : "tel:+996708161023",
         region : "Ош , Араван",
         currency:"сом",
-        monthlySales: 152040,
+        monthlySales: 151230,
         monthlyCollected: 0,
-        totalDebt: 152040,
+        totalDebt: 151230,
         rol: "agent"
     },
     // {
@@ -181,9 +181,9 @@ export const agents = [
         phoneUrl : "",
         region : "Склад калелин калхоз",
         currency:"сом",
-        monthlySales: 4600355,
+        monthlySales: 4736265,
         monthlyCollected: 0,
-        totalDebt: 4600355,
+        totalDebt: 4736265,
         rol: "agent"
     },
 
