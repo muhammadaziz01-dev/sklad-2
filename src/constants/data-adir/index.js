@@ -208,7 +208,7 @@ export const dataRTPAdir = [
     isActive: true,
   },
   {
-    id: 7,
+    id: 7787878,
     img: trubaRtp,
     name: "Труба PPR GF\\PPR 25x4,2 (PN 25) 4м белый RTP",
     brand: "RTP",
@@ -2365,7 +2365,7 @@ export const dataRTPAdir = [
     isActive: false,
   },
   {
-    id: 158,
+    id: 1585858,
     img: otvod7545,
     name: "Отвод ВК ПП 75х45 К,серый RTP",
     brand: "RTP",
@@ -2535,7 +2535,7 @@ export const dataRTPAdir = [
     isActive: true,
   },
   {
-    id: 170,
+    id: 170170,
     img: traynik757587,
     name: "Тройник ВК ПП 75\\75\\87° К,серый RTP",
     brand: "RTP",
