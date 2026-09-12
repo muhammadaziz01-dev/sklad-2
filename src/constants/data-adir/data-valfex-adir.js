@@ -3579,7 +3579,7 @@ export const dataValfex = [
     unit: "шт",
     category: "fitingNK",
     categoryName: "Фитинги НК",
-    allResidual: 1800,
+    allResidual: 1750,
     residualValue: "",
     isActive: true,
   },
