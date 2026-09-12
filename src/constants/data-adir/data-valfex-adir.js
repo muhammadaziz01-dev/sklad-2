@@ -287,7 +287,7 @@ export const dataValfex = [
     unit: "м",
     category: "trubaPPR",
     categoryName: "Труба ППР",
-    allResidual: 1380,
+    allResidual: 1680,
     residualValue: "",
     isActive: true,
   },
