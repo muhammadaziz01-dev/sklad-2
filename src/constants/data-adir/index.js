@@ -2273,9 +2273,9 @@ export const dataRTPAdir = [
     price: 1700,
     unit: "шт",
     category: "trubaNK",
-    allResidual: 50,
+    allResidual: 0,
     residualValue: "",
-    isActive: true,
+    isActive: false,
   },
   {
     id: 152,
@@ -2287,9 +2287,9 @@ export const dataRTPAdir = [
     unit: "шт",
     category: "trubaNK",
     categoryName: "Труба НК",
-    allResidual: 84,
+    allResidual: 0,
     residualValue: "",
-    isActive: true,
+    isActive: false,
   },
 
   // ═══════════════════════════════════════════════════════════
@@ -3249,7 +3249,7 @@ export const dataRTPAdir = [
     unit: "шт",
     category: "fitingNK",
     categoryName: "Фитинги НК",
-    allResidual: 100,
+    allResidual: 16,
     residualValue: "",
     isActive: true,
   },
