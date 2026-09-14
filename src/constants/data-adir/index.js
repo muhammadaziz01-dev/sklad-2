@@ -1171,7 +1171,7 @@ export const dataRTPAdir = [
     category: "kranPPR",
     category: "kranPPR",
     categoryName: "Кран ППР",
-    allResidual: 110,
+    allResidual: 100,
     residualValue: "",
     isActive: true,
   },
