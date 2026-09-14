@@ -1987,7 +1987,8 @@ export const dataRTPAdir = [
     residualValue: "",
     isActive: true,
     unit: "м",
-    category: "other",
+    category: "trubaPERT",
+    categoryName: "Труба PERT",
   },
 
   // ═══════════════════════════════════════════════════════════
