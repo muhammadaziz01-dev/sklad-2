@@ -179,7 +179,7 @@ export const agents = [
         img: AgentImg ,
         phone: "",
         phoneUrl : "",
-        region : "Склад калелин калхоз",
+        region : "Склад каленин колхоз",
         currency:"сом",
         monthlySales: 10489318,
         monthlyCollected: 0,
