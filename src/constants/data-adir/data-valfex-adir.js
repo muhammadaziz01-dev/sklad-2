@@ -259,7 +259,7 @@ export const dataValfex = [
     unit: "м",
     category: "trubaPPR",
     categoryName: "Труба ППР",
-    allResidual: 11200,
+    allResidual: 23800,
     residualValue: "",
     isActive: true,
   },
@@ -1541,7 +1541,7 @@ export const dataValfex = [
     isActive: false,
   },
   {
-    id: 102,
+    id: 102323232,
     img: muftaPPRKbNr,
     name: "Муфта комбинированная с Н\\Р 20х1\\2ф белый VALFEX",
     brand: "VALFEX",
