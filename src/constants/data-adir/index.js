@@ -2834,7 +2834,7 @@ export const dataRTPAdir = [
     unit: "шт",
     category: "fitingVK",
     categoryName: "Фитинги ВК",
-    allResidual: 684,
+    allResidual: 648,
     residualValue: "",
     isActive: true,
   },
