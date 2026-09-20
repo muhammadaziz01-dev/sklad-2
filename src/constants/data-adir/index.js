@@ -2201,7 +2201,7 @@ export const dataRTPAdir = [
     name: "Труба НК ПП 110х3.4х1000 рыжый RTP",
     brand: "RTP",
     quantity: "10 шт",
-    price: 380,
+    price: 420,
     unit: "шт",
     category: "trubaNK",
     categoryName: "Труба НК",
