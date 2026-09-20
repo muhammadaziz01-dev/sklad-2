@@ -232,7 +232,7 @@ export const dataValfex = [
     isActive: true,
   },
   {
-    id: 8,
+    id: 8989889898,
     img: trubaPPRPN20,
     name: "Труба полипропиленовая SDR 6 (PN 20) 63ф белый VALFEX",
     brand: "VALFEX",
