@@ -3088,7 +3088,7 @@ export const dataRTPAdir = [
     name: "Хомут в компл (М10) металл4 1\\2 (105-115) RTP",
     brand: "RTP",
     quantity: "50 шт",
-    price: 90,
+    price: 80,
     unit: "шт",
     category: "fitingVK",
     categoryName: "Фитинги ВК",
