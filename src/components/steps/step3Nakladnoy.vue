@@ -336,6 +336,7 @@ const selectedAgentData = computed(() =>
       border-color: #224386;
       border-radius: 10px;
       font-size: 13px;
+      
       font-weight: 600;
     }
   }
