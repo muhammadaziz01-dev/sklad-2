@@ -162,7 +162,7 @@ export const dataValfex = [
     isActive: false,
   },
   {
-    id: 3,
+    id: "Труба полипропиленовая SDR 6 (PN 20) 25ф белый VALFEX",
     img: trubaPPRPN20,
     name: "Труба полипропиленовая SDR 6 (PN 20) 25ф белый VALFEX",
     brand: "VALFEX",
@@ -190,7 +190,7 @@ export const dataValfex = [
     isActive: false,
   },
   {
-    id: 5,
+    id: "Труба полипропиленовая SDR 6 (PN 20) 32ф белый VALFEX",
     img: trubaPPRPN20,
     name: "Труба полипропиленовая SDR 6 (PN 20) 32ф белый VALFEX",
     brand: "VALFEX",
@@ -204,7 +204,7 @@ export const dataValfex = [
     isActive: true,
   },
   {
-    id: 6,
+    id: "Труба полипропиленовая SDR 6 (PN 20) 40ф белый VALFEX",
     img: trubaPPRPN20,
     name: "Труба полипропиленовая SDR 6 (PN 20) 40ф белый VALFEX",
     brand: "VALFEX",
@@ -218,7 +218,7 @@ export const dataValfex = [
     isActive: true,
   },
   {
-    id: 7,
+    id: "Труба полипропиленовая SDR 6 (PN 20) 50ф белый VALFEX",
     img: trubaPPRPN20,
     name: "Труба полипропиленовая SDR 6 (PN 20) 50ф белый VALFEX",
     brand: "VALFEX",
@@ -250,7 +250,7 @@ export const dataValfex = [
   // trubaPPR_PN25 — Труба PN25 (горячая вода, стекловолокно)
   // ═══════════════════════════════════════════════════════════
   {
-    id: 9,
+    id: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 20ф белый VALFEX",
     img: trubaPPRPN25,
     name: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 20ф белый VALFEX",
     brand: "VALFEX",
@@ -264,7 +264,7 @@ export const dataValfex = [
     isActive: true,
   },
   {
-    id: 10,
+    id: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 25ф белый VALFEX",
     img: trubaPPRPN25,
     name: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 25ф белый VALFEX",
     brand: "VALFEX",
@@ -278,7 +278,7 @@ export const dataValfex = [
     isActive: true,
   },
   {
-    id: 11,
+    id: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 32ф белый VALFEX",
     img: trubaPPRPN25,
     name: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 32ф белый VALFEX",
     brand: "VALFEX",
@@ -292,7 +292,7 @@ export const dataValfex = [
     isActive: true,
   },
   {
-    id: 12,
+    id: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 40ф белый VALFEX",
     img: trubaPPRPN25,
     name: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 40ф белый VALFEX",
     brand: "VALFEX",
@@ -306,7 +306,7 @@ export const dataValfex = [
     isActive: true,
   },
   {
-    id: 13,
+    id: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 50ф белый VALFEX",
     img: trubaPPRPN25,
     name: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 50ф VALFEX",
     brand: "VALFEX",
@@ -320,7 +320,7 @@ export const dataValfex = [
     isActive: true,
   },
   {
-    id: 14,
+    id: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 63ф белый VALFEX",
     img: trubaPPRPN25,
     name: "Труба полипропиленовая армированная стекловолокном SDR 6 (PN 25) 63ф белый VALFEX",
     brand: "VALFEX",
@@ -352,7 +352,7 @@ export const dataValfex = [
     isActive: false,
   },
   {
-    id: 16,
+    id: "Труба армированная алюминием 25х4.2 Valfex",
     img: trubaPPRPN25Alm,
     name: "Труба армированная алюминием 25х4.2 Valfex",
     brand: "VALFEX",
@@ -366,7 +366,7 @@ export const dataValfex = [
     isActive: true,
   },
   {
-    id: 17,
+    id: "Труба армированная алюминием 32х5.4 Valfex",
     img: trubaPPRPN25Alm,
     name: "Труба армированная алюминием 32х5.4 Valfex",
     brand: "VALFEX",
