@@ -181,9 +181,9 @@ export const agents = [
         phoneUrl : "",
         region : "Склад каленин колхоз",
         currency:"сом",
-        monthlySales: 19614631,
+        monthlySales: 19680431,
         monthlyCollected: 0,
-        totalDebt: 19614631,
+        totalDebt: 19680431,
         rol: "agent"
     },
 
