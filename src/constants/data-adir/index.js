@@ -133,7 +133,7 @@ export const dataRTPAdir = [
     unit: "м",
     category: "trubaPPR",
     categoryName: "Труба ППР",
-    allResidual: 11400,
+    allResidual: 10400,
     residualValue: "",
     isActive: true,
   },
