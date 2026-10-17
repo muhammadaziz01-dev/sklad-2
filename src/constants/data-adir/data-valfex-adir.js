@@ -2378,7 +2378,7 @@ export const dataValfex = [
     unit: "рул",
     category: "trubaPERT",
     categoryName: "Труба PERT",
-    allResidual: 660,
+    allResidual: 636,
     residualValue: "",
     isActive: true,
   },
