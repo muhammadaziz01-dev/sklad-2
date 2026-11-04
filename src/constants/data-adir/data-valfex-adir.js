@@ -2756,7 +2756,7 @@ export const dataValfex = [
     unit: "шт",
     category: "trubaNK",
     categoryName: "Труба НК",
-    allResidual: 140,
+    allResidual: 130,
     residualValue: "",
     isActive: true,
   },
