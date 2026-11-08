@@ -6,9 +6,9 @@
 </template>
 
 <script setup>
-import Navbar from "../../components/header/index.vue";
-import AgentCard from "../../components/card/agent/index.vue";
-import {dataAgents} from "../../constants/agents/index.js";
+import Navbar from "@/components/header/index.vue";
+import AgentCard from "@/components/card/agent/index.vue";
+import {dataAgents} from "@/constants/agents/index.js";
 import {ref , computed} from "vue"
 
 const propsDate = {
