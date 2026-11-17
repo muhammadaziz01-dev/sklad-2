@@ -1,4 +1,3 @@
-
 // Valfex praduct data
 // ═══════════════════════════════════════════════════════════
 
@@ -96,8 +95,7 @@ import obratniyKlapn50 from "@/assets/productImgs/rtp/obratniyKlapn50.webp";
 import obratniyKlapn110 from "@/assets/productImgs/rtp/obratniyKlapn110.webp";
 import klipsVk from "@/assets/productImgs/rtp/klipsVk.jpg";
 import xomut from "@/assets/productImgs/rtp/xomut.jpg";
-import patrubka110 from "@/assets/productImgs/rtp/patrubkaVk110.webp"
-
+import patrubka110 from "@/assets/productImgs/rtp/patrubkaVk110.webp";
 
 // --- Фитинги НК ---
 import otvodNk from "@/assets/productImgs/rtp/otvodNk.jpg";
@@ -127,7 +125,7 @@ import kleyKras from "@/assets/productImgs/valfex/kleyKras.jpg";
 import noshka from "@/assets/productImgs/valfex/noshka.jpg";
 import caldoRed from "@/assets/productImgs/valfex/caldoRed.webp";
 import caldoBlu from "@/assets/productImgs/valfex/caldoBlu.jpg";
-import vtulka from "@/assets/productImgs/valfex/vtulka.jpg"
+import vtulka from "@/assets/productImgs/valfex/vtulka.jpg";
 
 export const dataValfex = [
   // ═══════════════════════════════════════════════════════════
@@ -171,7 +169,7 @@ export const dataValfex = [
     unit: "м",
     category: "trubaPPR",
     categoryName: "Труба ППР",
-    allResidual: 1400,
+    allResidual: 900,
     residualValue: "",
     isActive: true,
   },
@@ -259,7 +257,7 @@ export const dataValfex = [
     unit: "м",
     category: "trubaPPR",
     categoryName: "Труба ППР",
-    allResidual: 19600,
+    allResidual: 18900,
     residualValue: "",
     isActive: true,
   },
@@ -273,7 +271,7 @@ export const dataValfex = [
     unit: "м",
     category: "trubaPPR",
     categoryName: "Труба ППР",
-    allResidual: 3500,
+    allResidual: 3000,
     residualValue: "",
     isActive: true,
   },
@@ -765,7 +763,7 @@ export const dataValfex = [
     unit: "шт",
     category: "ugolnikPPR",
     categoryName: "Уголник ППР",
-    allResidual: 98800,
+    allResidual: 94800,
     residualValue: "",
     isActive: true,
   },
@@ -793,7 +791,7 @@ export const dataValfex = [
     unit: "шт",
     category: "ugolnikPPR",
     categoryName: "Уголник ППР",
-    allResidual: 13100,
+    allResidual: 12100,
     residualValue: "",
     isActive: true,
   },
@@ -807,7 +805,7 @@ export const dataValfex = [
     unit: "шт",
     category: "ugolnikPPR",
     categoryName: "Уголник ППР",
-    allResidual: 3360,
+    allResidual: 2760,
     residualValue: "",
     isActive: true,
   },
@@ -1720,9 +1718,9 @@ export const dataValfex = [
     unit: "шт",
     category: "muftaKombPPR",
     categoryName: "Муфта комб ППР",
-    allResidual: 400,
+    allResidual: 0,
     residualValue: "",
-    isActive: true,
+    isActive: false,
   },
   {
     id: 114,
@@ -1848,9 +1846,9 @@ export const dataValfex = [
     unit: "шт",
     category: "muftaKombPPR",
     categoryName: "Муфта комб ППР",
-    allResidual: 60,
+    allResidual: 0,
     residualValue: "",
-    isActive: true,
+    isActive: false,
   },
   {
     id: 122,
@@ -2378,7 +2376,7 @@ export const dataValfex = [
     unit: "рул",
     category: "trubaPERT",
     categoryName: "Труба PERT",
-    allResidual: 612,
+    allResidual: 492,
     residualValue: "",
     isActive: true,
   },
@@ -2396,7 +2394,7 @@ export const dataValfex = [
     residualValue: "",
     isActive: true,
   },
-// vtulka 
+  // vtulka
   {
     id: 1492323,
     img: vtulka,
@@ -3378,14 +3376,14 @@ export const dataValfex = [
     isActive: true,
   },
 
-  // patrubka 
+  // patrubka
   {
     id: 151,
     img: patrubka110,
     name: "Потрубок компенсационный ВК ПП 110х87 К,серый Valfex",
     brand: "Vlafex",
     quantity: "36 шт",
-    price: 110,//praysi o'zgarmadi tekshirilsin 
+    price: 110, //praysi o'zgarmadi tekshirilsin
     allResidual: 525,
     residualValue: "",
     unit: "шт",
@@ -3881,7 +3879,7 @@ export const dataValfex = [
     residualValue: "",
     isActive: false,
   },
-  
+
   {
     id: 255,
     img: utiplitelSin,
