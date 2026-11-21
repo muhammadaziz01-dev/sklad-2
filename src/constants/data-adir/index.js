@@ -2333,7 +2333,7 @@ export const dataRTPAdir = [
     unit: "шт",
     category: "trubaNK",
     categoryName: "Труба НК",
-    allResidual: 200,
+    allResidual: 120,
     residualValue: "",
     isActive: true,
   },
